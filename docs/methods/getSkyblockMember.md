@@ -53,7 +53,7 @@ Map(1) {
       runecrafting: [Object]
     },
     slayer: { zombie: [Object], spider: [Object], wolf: [Object] },
-    dungeons: { types: [Object], classes: [Object] },
+    dungeons: { dungeon_types: [Object], classes: [Object] },
     collections: {
       LOG: 19,
       SEEDS: 7430,
