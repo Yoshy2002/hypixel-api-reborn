@@ -1933,7 +1933,7 @@ declare module 'hypixel-api-reborn' {
     bestiary: SKYBLOCK_BESTIARY;
     kuudra: NETHER_ISLAND_PLAYER_DATA;
     dungeons: {
-      types: {
+      dungeon_types: {
         catacombs: {
           experience: SKYBLOCK_DUNGEON_TYPE_DATA;
           completions: { [name: string]: number };
