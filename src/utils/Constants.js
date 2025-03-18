@@ -2151,6 +2151,13 @@ module.exports = {
             bracket: 4
           },
           {
+            name: 'Mithril Grubber',
+            cap: 300,
+
+            mobs: ['small_mithril_grubber_15'],
+            bracket: 3
+          },
+          {
             name: 'Night Squid',
             cap: 1000,
 
@@ -2255,10 +2262,24 @@ module.exports = {
 
         mobs: [
           {
+            name: 'Fiery Scuttler',
+            cap: 400,
+
+            mobs: ['fiery_scuttler_475'],
+            bracket: 5
+          },
+          {
             name: 'Fire Eel',
             cap: 1000,
 
             mobs: ['fire_eel_240'],
+            bracket: 4
+          },
+          {
+            name: 'Fireproof Witch',
+            cap: 1000,
+
+            mobs: ['fireproof_witch_75'],
             bracket: 4
           },
           {
@@ -2267,6 +2288,13 @@ module.exports = {
 
             mobs: ['flaming_worm_50'],
             bracket: 3
+          },
+          {
+            name: 'Fried Chicken',
+            cap: 3000,
+
+            mobs: ['fried_chicken_30'],
+            bracket: 4
           },
           {
             name: 'Lava Blaze',
@@ -2330,6 +2358,13 @@ module.exports = {
 
             mobs: ['pyroclastic_worm_240'],
             bracket: 4
+          },
+          {
+            name: 'Ragnarok',
+            cap: 100,
+
+            mobs: ['ragnarok_666'],
+            bracket: 7
           },
           {
             name: 'Taurus',
@@ -2467,6 +2502,82 @@ module.exports = {
 
             mobs: ['yeti_175'],
             bracket: 6
+          }
+        ]
+      },
+      backwater_bayou: {
+        name: 'Backwater Bayou',
+
+        mobs: [
+          {
+            name: 'Alligator',
+            cap: 400,
+
+            mobs: ['alligator_120'],
+            bracket: 5
+          },
+          {
+            name: 'Banshee',
+            cap: 1000,
+
+            mobs: ['banshee_10'],
+            bracket: 4
+          },
+          {
+            name: 'Bayou Sludge',
+            cap: 1000,
+
+            mobs: ['bayou_sludge_25'],
+            bracket: 4
+          },
+          {
+            name: 'Blue Ringed Octopus',
+            cap: 400,
+
+            mobs: ['blue_ringed_octopus_275'],
+            bracket: 5
+          },
+          {
+            name: 'Dumpster Diver',
+            cap: 1000,
+
+            mobs: ['dumpster_diver_15'],
+            bracket: 4
+          },
+          {
+            name: 'Frog Man',
+            cap: 3000,
+
+            mobs: ['frog_man_10'],
+            bracket: 4
+          },
+          {
+            name: 'Snapping Turtle',
+            cap: 1000,
+
+            mobs: ['snapping_turtle_30'],
+            bracket: 4
+          },
+          {
+            name: 'Titanoboa',
+            cap: 100,
+
+            mobs: ['titanoboa_240'],
+            bracket: 7
+          },
+          {
+            name: 'Trash Gobbler',
+            cap: 1000,
+
+            mobs: ['trash_gobbler_8'],
+            bracket: 4
+          },
+          {
+            name: 'Wiki Tiki',
+            cap: 100,
+
+            mobs: ['wiki_tiki_400'],
+            bracket: 7
           }
         ]
       }
