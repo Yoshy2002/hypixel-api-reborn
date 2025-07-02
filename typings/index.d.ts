@@ -1105,7 +1105,10 @@ declare module 'hypixel-api-reborn' {
       /**
        * @description Get slayer level
        */
-      getSlayerLevel(slayer: Record<string, unknown>, type: string): {
+      getSlayerLevel(
+        slayer: Record<string, unknown>,
+        type: string
+      ): {
         xp: number;
         tier1: number;
         tier2: number;
