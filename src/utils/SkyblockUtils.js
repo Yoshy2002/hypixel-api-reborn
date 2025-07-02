@@ -109,8 +109,8 @@ function getLevelByXp(xp, type, levelCap) {
   };
 }
 
-function getSlayerLevel(slayer) {
-  if (!slayer) {
+function getSlayerLevel(slayer, type) {
+  if (!slayer || !constants.slayerXpTables[type]) {
     return {
       xp: 0,
       tier1: 0,
@@ -122,21 +122,19 @@ function getSlayerLevel(slayer) {
     };
   }
 
-  // eslint-disable-next-line camelcase
-  const { claimed_levels } = slayer;
+  const xp = slayer.xp || 0;
+  const xpTable = constants.slayerXpTables[type];
   let level = 0;
 
-  // eslint-disable-next-line camelcase
-  for (const levelName in claimed_levels) {
-    if (Object.prototype.hasOwnProperty.call(claimed_levels, levelName)) {
-      const newLevel = parseInt(levelName.replace('_special', '').split('_').pop(), 10);
-      if (newLevel > level) {
-        level = newLevel;
-      }
+  for (let i = 0; i < xpTable.length; i++) {
+    if (xp >= xpTable[i]) {
+      level = i;
+    } else {
+      break;
     }
   }
   return {
-    xp: slayer.xp || 0,
+    xp,
     tier1: slayer.boss_kills_tier_0 || 0,
     tier2: slayer.boss_kills_tier_1 || 0,
     tier3: slayer.boss_kills_tier_2 || 0,
@@ -264,12 +262,12 @@ function getBestiaryLevel(userProfile) {
 function getSlayer(data) {
   if (!data?.slayer?.slayer_bosses) return;
   return {
-    zombie: getSlayerLevel(data?.slayer?.slayer_bosses?.zombie),
-    spider: getSlayerLevel(data?.slayer?.slayer_bosses?.spider),
-    wolf: getSlayerLevel(data?.slayer?.slayer_bosses?.wolf),
-    enderman: getSlayerLevel(data?.slayer?.slayer_bosses?.enderman),
-    blaze: getSlayerLevel(data?.slayer?.slayer_bosses?.blaze),
-    vampire: getSlayerLevel(data?.slayer?.slayer_bosses?.vampire)
+    zombie: getSlayerLevel(data?.slayer?.slayer_bosses?.zombie, 'zombie'),
+    spider: getSlayerLevel(data?.slayer?.slayer_bosses?.spider, 'spider'),
+    wolf: getSlayerLevel(data?.slayer?.slayer_bosses?.wolf, 'wolf'),
+    enderman: getSlayerLevel(data?.slayer?.slayer_bosses?.enderman, 'enderman'),
+    blaze: getSlayerLevel(data?.slayer?.slayer_bosses?.blaze, 'blaze'),
+    vampire: getSlayerLevel(data?.slayer?.slayer_bosses?.vampire, 'vampire')
   };
 }
 
