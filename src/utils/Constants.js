@@ -1484,10 +1484,10 @@ module.exports = {
         },
         {
           name: 'Flare',
-          cap: 100000,
+          cap: 10000,
 
           mobs: ['flare_90'],
-          bracket: 1
+          bracket: 3
         },
         {
           name: 'Ghast',
@@ -1860,6 +1860,54 @@ module.exports = {
         }
       ]
     },
+    foraging_2: {
+      name: 'Galatea',
+
+      mobs: [
+        {
+          name: 'Chill',
+          cap: 1000,
+
+          mobs: ['chillblade_31', 'chillshot_31'],
+          bracket: 4
+        },
+        {
+          name: 'Ent',
+          cap: 1000,
+
+          mobs: ['ent_14'],
+          bracket: 4
+        },
+        {
+          name: 'Stridersurfer',
+          cap: 1000,
+
+          mobs: ['strider_20', 'strider_21'],
+          bracket: 4
+        },
+        {
+          name: 'Tadgang',
+          cap: 1000,
+
+          mobs: ['tadgang_frog_10', 'tadgang_frog_8'],
+          bracket: 4
+        },
+        {
+          name: 'The Loch Emperor',
+          cap: 400,
+
+          mobs: ['skeleton_emperor_150', 'guardian_emperor_150'],
+          bracket: 5
+        },
+        {
+          name: 'Tidetot',
+          cap: 1000,
+
+          mobs: ['tidetot_10'],
+          bracket: 4
+        }
+      ]
+    },
     spooky_festival: {
       name: 'Spooky Festival',
 
@@ -2180,6 +2228,13 @@ module.exports = {
             bracket: 3
           },
           {
+            name: 'Blue Ringed Octopus',
+            cap: 400,
+
+            mobs: ['blue_ringed_octopus_275'],
+            bracket: 5
+          },
+          {
             name: 'Carrot King',
             cap: 400,
 
@@ -2198,6 +2253,13 @@ module.exports = {
             cap: 1000,
 
             mobs: ['deep_sea_protector_60'],
+            bracket: 4
+          },
+          {
+            name: 'Frog Man',
+            cap: 3000,
+
+            mobs: ['frog_man_10'],
             bracket: 4
           },
           {
@@ -2285,18 +2347,18 @@ module.exports = {
             bracket: 3
           },
           {
+            name: 'Snapping Turtle',
+            cap: 1000,
+
+            mobs: ['snapping_turtle_30'],
+            bracket: 4
+          },
+          {
             name: 'Squid',
             cap: 10000,
 
             mobs: ['pond_squid_1'],
             bracket: 2
-          },
-          {
-            name: 'The Sea Emperor',
-            cap: 100,
-
-            mobs: ['skeleton_emperor_150', 'guardian_emperor_150'],
-            bracket: 7
           },
           {
             name: 'Water Hydra',
@@ -2311,6 +2373,20 @@ module.exports = {
 
             mobs: ['water_worm_20'],
             bracket: 4
+          },
+          {
+            name: 'Wetwing',
+            cap: 1000,
+
+            mobs: ['wetwing_chicken_18'],
+            bracket: 4
+          },
+          {
+            name: 'Wiki Tiki',
+            cap: 100,
+
+            mobs: ['wiki_tiki_400'],
+            bracket: 7
           }
         ]
       },
@@ -2588,31 +2664,10 @@ module.exports = {
             bracket: 4
           },
           {
-            name: 'Blue Ringed Octopus',
-            cap: 400,
-
-            mobs: ['blue_ringed_octopus_275'],
-            bracket: 5
-          },
-          {
             name: 'Dumpster Diver',
             cap: 1000,
 
             mobs: ['dumpster_diver_15'],
-            bracket: 4
-          },
-          {
-            name: 'Frog Man',
-            cap: 3000,
-
-            mobs: ['frog_man_10'],
-            bracket: 4
-          },
-          {
-            name: 'Snapping Turtle',
-            cap: 1000,
-
-            mobs: ['snapping_turtle_30'],
             bracket: 4
           },
           {
@@ -2628,13 +2683,6 @@ module.exports = {
 
             mobs: ['trash_gobbler_8'],
             bracket: 4
-          },
-          {
-            name: 'Wiki Tiki',
-            cap: 100,
-
-            mobs: ['wiki_tiki_400'],
-            bracket: 7
           }
         ]
       }
